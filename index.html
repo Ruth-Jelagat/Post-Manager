@@ -1,0 +1,34 @@
+<!--identify HTML document -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Post Board</title>
+
+ <!--link css file for styling-->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Mini Post Board</h1>
+
+   <!--section for creating a new post-->
+    <div class="form">
+      <input type="text" id="title" placeholder="Post Title" />
+      <textarea id="content" placeholder="Post Content"></textarea>
+      <input type="text" id="image" placeholder="Image URL (optional)" />
+      <button onclick="addPost()">Add Post</button>
+    </div>
+
+   <!--button to load all saved posts from storage-->
+    <button onclick="loadPosts()">Load All Posts</button>
+
+    <!-- shows where posts will be displayed -->
+    <div id="posts"></div>
+  </div>
+
+  <!-- Link to external JS -->
+  <script src="src/index.js"></script>
+</body>
+</html>
